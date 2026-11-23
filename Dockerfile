@@ -31,7 +31,7 @@ COPY public ./public
 
 RUN npm run build
 
-FROM php:8.3-apache AS application
+FROM php:8.4-apache AS application
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         libpq-dev \
